@@ -1,5 +1,6 @@
 <template lang="html">
     <form>
+        <h3>Manual input</h3>
         <div class="form-group">
             <label for="incoming">Incoming Email</label>
             <input type="email" v-model="incoming" class="form-control" id="incoming" placeholder="Incoming Email">

@@ -1,7 +1,7 @@
 <template lang="html">
     <div>
-    <h2>Code to update server <small><button @click="selectText('output')" type="button" class="btn btn-default" name="button">Click to select text</button> <kbd><kbd>ctrl</kbd> + <kbd>c</kbd></kbd></small></h2>
-    <pre><code id='output'>{{ output }}</code></pre>
+    <h3>Code for server <small>Paste into terminal</small></h3>
+    <pre><button @click="selectText('output')" type="button" class="btn btn-sm btn-default pull-right" name="button">Select text</button><code id='output'>{{ output }}</code></pre>
 </div>
 </template>
 

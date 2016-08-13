@@ -1,6 +1,6 @@
 <template lang="html">
     <div>
-        <h2>Code to update server <small></small></h2>
+        <h3>Data from server <small><code>/etc/postfix/virtual</code></small></h3>
         <textarea class="form-control" v-model="inputText" placeholder="Paste config file from server here" rows="3"></textarea>
         <br>
         <button class="btn btn-primary" @click="updateList" type="button" name="button">Update list</button>

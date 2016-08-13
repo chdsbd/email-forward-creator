@@ -13,18 +13,14 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
+                    <h2>Input</h2>
                     <vueform></vueform>
+                    <cmdinput :forwards.sync="forwards"></cmdinput>
+                    <h2>Output</h2>
+                    <cmdoutput :forwards="forwards"></cmdoutput>
                 </div>
                 <div class="col-md-8">
                     <vuetable :forwards="forwards"></vuetable>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <cmdinput :forwards.sync="forwards"></cmdinput>
-                </div>
-                <div class="col-md-6">
-                    <cmdoutput :forwards="forwards"></cmdoutput>
                 </div>
             </div>
         </div>
