@@ -51,22 +51,7 @@
         data() {
             return {
                 login: true,
-                forwards: [{
-                    incoming: 'ex@example.com',
-                    outgoing: 'ex@gmail.com',
-                    enabled: true,
-                    editing: false
-                }, {
-                    incoming: 'ex2@anydomain.com',
-                    outgoing: 'ex2@yahoo.com',
-                    enabled: false,
-                    editing: false
-                }, {
-                    incoming: 'bill@smith.com',
-                    outgoing: 'bill.smith@gmail.com',
-                    enabled: true,
-                    editing: false
-                }],
+                forwards: [],
                 alert: {
                     show: false,
                     type: 'danger',

@@ -20,7 +20,7 @@
             </td>
             <td>
                 <button type="button" title="Click to edit forward" @click="toggleEditing(forward)" class="btn btn-xs btn-default"><span class="glyphicon glyphicon-edit"></span></button>
-                <button type="button" title="Double click to delete forward" @dblclick="deleteItem(forward)" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
+                <button type="button" title="Double click to delete forward" @click="deleteItem(forward)" class="btn btn-xs btn-danger"><span class="glyphicon glyphicon-trash"></span></button>
             </td>
         </tr>
     </table>
@@ -29,8 +29,7 @@
 <script>
     export default {
         data: function() {
-            return {
-            }
+            return {}
         },
         props: ['forwards'],
         computed: {},

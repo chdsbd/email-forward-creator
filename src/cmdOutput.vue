@@ -1,8 +1,8 @@
 <template lang="html">
     <div>
-    <h3>Code for server <small>Paste into terminal</small></h3>
-    <pre><button @click="selectText('output')" type="button" class="btn btn-sm btn-default pull-right" name="button">Select text</button><code id='output'>{{ output }}</code></pre>
-</div>
+        <h3>Code for server <small>Paste into terminal</small></h3>
+        <pre><button @click="selectText('output')" type="button" class="btn btn-sm btn-default pull-right" name="button">Select text</button><code id='output'>{{ output }}</code></pre>
+    </div>
 </template>
 
 <script>
@@ -40,7 +40,7 @@
                 this.selectText('output');
             }
         },
-        ready: function () {
+        ready: function() {
             this.selectText('output');
         },
         attached: function() {},

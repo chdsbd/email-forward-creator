@@ -22,6 +22,9 @@
                         out: '',
                         enabled: true
                     }
+                    if (line === '') {
+                        return forward
+                    }
                     let forwardProperties = line.split(' ').map(property => property.trim())
                     forwardProperties.forEach(prop => {
                         if (prop === '#') {
@@ -38,6 +41,11 @@
                     })
 
                     return forward
+                })
+                forwards.forEach((forward, index) => {
+                    if (forward.in === '' || forward.out === '') {
+                        forwards.splice(index, 1)
+                    }
                 })
                 return forwards
             }
